@@ -12,7 +12,12 @@ struct FeedView: View {
         ZStack(alignment: .bottomTrailing){
             
             ScrollView {
-                
+                VStack{
+                    ForEach(0..<20) { x in
+                        TweetCell()
+                    }
+                }
+                .padding()
             }
             
             Button(action: {}, label: {
